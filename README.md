@@ -1,4 +1,4 @@
-# Blog SpringBoot Application with REST APIs and Spring Security
+# Blog SpringBoot Application with REST APIs and Spring Security - JWT Token
 
 ## Guide
 
@@ -9,3 +9,4 @@
 in docs to be more precise under package com.nikola.blog.utils.PasswordGeneratorEncoder - is public main method to run BCrypt passowrd generator or go to https://www.bcryptcalculator.com/ 
 - Once added you fill the table 'users_roles' to appropriate user you just created.
 - Link for swagger -> http://localhost:8080/swagger-ui/index.html
+- Once logged in via auth, you will get respnose in value of 'accessToken' -> copy paste it into swagger 
