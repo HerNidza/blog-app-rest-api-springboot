@@ -96,6 +96,13 @@ public class CommentServiceImpl implements CommentService {
         }
         return comment;
     }
+
+    @Override
+    public List<CommentDto> searchByCommentName(String query) {
+        List<Comment> searchByCommentName = commentRepository.searchByName(query);
+        return searchByCommentName.stream().map(comment -> mapToDTO(comment)).collect(Collectors.toList());
+    }
+
     private CommentDto mapToDTO(Comment comment){
         return mapper.map(comment, CommentDto.class);
     }
