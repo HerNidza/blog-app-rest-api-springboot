@@ -2,7 +2,7 @@
 
 ## Guide
 
-- Make sure that you are using MySQL becasue of MySQL dependecy in pom.xml
+- Make sure that you are using MySQL becasue of MySQL dependecy in pom.xml -> in application.properties configure username and password to your Database
 - Create only 'my_blog' database in MySQL, application will do creation of tables 
 - Also 2 Roles will be added 'ROLE_ADMIN, and 'ROLE_USER'
 - You will need to signup to fully test app, first registering you should do directly in database and make sure that password is BCrypt - 
